@@ -1,0 +1,161 @@
+start variable1$
+startI enteroUno$
+startF flotante$
+startB boleanoD1$
+enteroUno = 'hola'$
+variable1 = 'adios'$
+enteroUno = -3 + 3 5 5%$
+flotante = 9.2$
+start cadena = 'hola'$
+startI numero = 564565$
+startF float = 35.892$
+startI suma = 3 + 3$
+startI resta = -3 ~ 2$
+startI multiplica = 3 * 8$
+startI divi = 3 /3$
+startI mod = 9 % 20$
+startI a = 3 3 +$
+startI b = -3 3 ~$
+startI c = -3 3 *$
+startI d = -3 3 /$
+startI e = -3 3 %$
+startI f = -3 + 3 5 5%$
+startI g = -3 + 3 5 5%$
+startI h = 3 3 + 6 / 5$
+startF i = 3.0 3.0 +$
+startF j = -3.0 3.9 ~$
+startF k = -3.885 3.2454*$
+startF l = -3.28489 3.23 /$
+startF m = -385.656 3.5989 %$
+startF n = 3.1  3.8 + 6.9 5.5*$
+startF o = -3.8 + 3.72 5.12 55465.2%$
+startF p = 3.782 3.545 + 65995.42 / 5.254$
+
+vamoSi (4 >= 1 || !(1 <= 1)) { tome 2$}  aTerminarpues
+vamoSi (4 == 1 && !(1 != 1)) { tome 2$}  aTerminarpues siNoVamos { rompido$ }
+vamoSi (4 > 1) { 
+	vamoSi (1 < 4) { 
+		tome 2$
+		tome 3$
+		}  aTerminarpues siNoVamos { tome 2$}
+}aTerminarpues siNoVamos { 
+		tome 5$
+}
+
+vamoSi (lamala) { tome 2$}  aTerminarpues
+
+vamo (4 == 5 && 5 < 3) { vamo(4==4){tome 5$} aTerminar } aTerminar
+
+vamo (4 == 5 || 5 < 3) { 
+	vamo(4!=4){
+		vamoSi (lamala) { tome 2$}  aTerminarpues
+		tome 5$
+	} aTerminar 
+} aTerminar
+
+dele{
+	vamoSi (4 >= 1 || !(1 <= 1)) { tome 2$}  aTerminarpues
+	vamoSi (4 == 1 && !(1 != 1)) { tome 2$}  aTerminarpues siNoVamos { rompido$ }
+}vamo (4 == 5 || 5 < 3) { 
+	vamo(4!=4){
+		vamoSi (lamala) { tome 2$}  aTerminarpues
+		tome 5$
+	} aTerminar 
+} aTerminar
+
+paLante(startI i = 1$ i < 5$ i++$){
+	paLante(startI j = 2$ j > 3$ j~~$){
+		vamo (4 == 5 || 5 < 3) { 
+			vamo(4!=4){
+				vamoSi (lamala) { tome 2$}  aTerminarpues
+					tome 5$
+			} aTerminar 
+		} aTerminar
+	} aTerminal
+} aTerminal
+
+trueque (i){
+	incidente 1: {
+		trueque (j){
+			incidente 2:{
+				tome 1$
+			}
+			rompido$
+		}
+	}
+	rompido$
+}
+
+trueque (i){
+	incidente 1: {
+		trueque (j){
+			incidente 2:{
+				vamo (4 == 5 && 5 < 3) { vamo(4==4){tome 5$} aTerminar } aTerminar
+				startI suma3 = 3 + 3$
+			}
+			rompido$
+		}
+	}
+	rompido$
+}
+
+pruebe {
+	pruebe{
+		tome 1$
+	}pille(ex){
+		tome 2$
+	}
+	
+}pille(error){
+	vamoSi (4 >= 1 || !(1 <= 1)) { tome 2$} aTerminarpues	
+	vamo (4 == 5 && 5 < 3) { vamo(4==4){tome 5$} aTerminar } aTerminar
+}
+
+hagalePues hola (i){
+	pruebe {
+        pruebe{
+           trueque (i){
+			incidente 1: {
+				trueque (j){
+					incidente 2:{
+						vamo (4 == 5 && 5 < 3) { vamo(4==4){tome 5$} aTerminar } aTerminar
+						startI suma4 = 3 + 3$
+					}
+					rompido$
+				}
+			}
+				rompido$
+			}
+        }pille(ex){
+           tome 2$
+        }
+		pruebe{
+           tome 1$
+        }pille(ex){
+           tome 2$
+        }
+	}pille(error){
+        vamoSi (4 >= 1 || !(1 <= 1)) { tome 2$} aTerminarpues   
+	}
+}
+
+hagalePues adios (){
+	vamo (4 == 5) { vamo(4==4){tome 5$} aTerminar } aTerminar
+	dele{
+		vamoSi (4 >= 1 || !(1 <= 1)) { tome 2$}  aTerminarpues
+		vamoSi (4 == 1 && !(1 != 1)) { tome 2$}  aTerminarpues siNoVamos { rompido$ }
+	}vamo (4 == 5 || 5 < 3) { 
+		vamo(4!=4){
+			vamoSi (lamala) { tome 2$}  aTerminarpues
+			tome 5$
+		} aTerminar 
+	} aTerminar
+	tome 6$
+}
+
+hagalePues buenas2 (i = 2,a2,a = 'hola'){
+        hagalePues buenas1 (i,a2,a){
+	        vamoSi (4 >= 1 || !(1 <= 1)) { tome 2$}  aTerminarpues siNoVamos { rompido$ }
+		}
+	tome 6$
+}
