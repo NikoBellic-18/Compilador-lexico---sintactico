@@ -2,7 +2,6 @@ start variable1$
 startI enteroUno$
 startF flotante$
 startB boleanoD1$
-enteroUno = 'hola'$
 variable1 = 'adios'$
 enteroUno = -3 + 3 5 5%$
 flotante = 9.2$
